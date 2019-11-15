@@ -41,7 +41,7 @@ img{
   border-bottom: 3px solid rgb(3, 3, 3);
 }
 #home_body{
-  background: url(bg.jpg);
+  background: url(image/bg.jpg);
   background-repeat:no-repeat;
    background-size:cover;
 }
@@ -63,6 +63,7 @@ h3 {
 li img {
   float: left;
   margin: 0 15px 0 0;
+  background-color: #eee;
 }
  
 li p {
@@ -78,6 +79,40 @@ li:hover {
   background: #eee;
   cursor: pointer;
 }
+#card{
+  background: rgb(139, 191, 233);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px rgb(117, 135, 238);
+}
+h3{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(30, 30, 228), 0 0 5px rgb(0, 0, 255);
+  font-size: 25px;
+}
+.example_a {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #139c2a;
+padding: 10px;
+border-radius: 5px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+float: right;
+}
+.example_a:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+img {
+  border-radius: 50%;
+}
 </style>
   </header>
 <body id=home_body>
@@ -89,31 +124,79 @@ li:hover {
         </div>
       <center>
         <div style="margin-top: 100px;">
-          <ul>
-            <li>
-              <img src="us1.webp" />
-              <h3>ashish jksol</h3>
-              <p>I have 5+ year experience in mobile development. You’re looking for the good experience android & ios developer, let’s talk about a perfect match!.</p>
-            </li>
-              
-            <li>
-              <img src="user.jpg"  />
-              <h3>Headline</h3>
-              <p>Lorem ipsum dolor sit amet...</p>
-            </li>
-         
-            <li>
-              <img src="user.jpg"  />
-              <h3>Headline</h3>
-              <p>Lorem ipsum dolor sit amet...</p>
-            </li>
-         
-            <li>
-              <img src="user.jpg"  />
-              <h3>Headline</h3>
-              <p>Lorem ipsum dolor sit amet...</p>
-            </li>
-          </ul>
+            <table style="width:100%">
+                <tr>
+                  <th> 
+                     <ul>
+                      <li id="card">
+                        <img src="image/user.png" />
+                        <h3>YOUNESS</h3>
+                        <p style="font-size: 15px;">I'm a user web/android developer</p>                  
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+                    
+                      </li>
+                        
+                      <li id="card">
+                        <img src="image/user.png"  />
+                        <h3>YOUSSEF</h3>
+                        <p style="font-size: 15px;">I'm a Game developer.</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li>
+                   
+                      <li id="card">
+                        <img src="image/user.png"  />
+                        <h3>AYOUB</h3>
+                        <p style="font-size: 15px;">I'm a web developer and IOS apps developer.</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li>
+                   
+                      <li id="card">
+                        <img src="image/user.png"  />
+                        <h3>ACHRAF</h3>
+                        <p style="font-size: 15px;">I'm a web developer and dropshipper .</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li>
+                    </ul></th>
+                  <th>  <ul>
+                      <li id="card">
+                        <img src="image/user.png" />
+                        <h3>JAMAL</h3>
+                        <p style="font-size: 15px;">I'm a web developer and database administrator .</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li>
+                        
+                      <li id="card">
+                        <img src="image/user.png"  />
+                        <h3>NAOUFAL</h3>
+                        <p style="font-size: 15px;">I'm a web developer and gamer .</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li>
+                   
+                      <li id="card">
+                        <img src="image/women.png"  />
+                        <h3>ZINEB</h3>
+                        <p style="font-size: 15px;">I'm a web developer and Software tester .</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li> 
+                   
+                      <li id="card">
+                        <img src="image/women.png"  />
+                        <h3>SARA</h3>
+                        <p style="font-size: 15px;">I'm a web developer and graphic designer .</p>
+                        <div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Call</a></div>
+
+                      </li>
+                    </ul></th>
+                </tr>
+            
+              </table>
+        
         </div>
       </center>
      
