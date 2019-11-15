@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <header>
+<title>SoftDev</title>
+<style>
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(80, 35, 243);;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(46, 137, 255);
+  color: white;
+  border-bottom: 3px solid rgb(3, 3, 3);
+}
+#home_body{
+  background: url(bg.jpg);
+  background-repeat:no-repeat;
+   background-size:cover;
+}
+.glow-on-hover {
+  margin: 10px;
+  align-content: center;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(16, 3, 134);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  rgb(16, 3, 134);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.flex-container {
+  margin-top: 200px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  
+}
+</style>
+  </header>
+<body id=home_body>
+  <dev>
+      <div class="topnav">
+          <a class="active" href="our_developer.html">Home</a>
+          <a href="index.html">Our Developers</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <center>
+            <div class="flex-container">
+                <button class="glow-on-hover" type="button">Find A developer!</button>
+                <button class="glow-on-hover" type="button">I'm A developer!</button> </div>
+        </center>
+    
+          <center>
+              <table style="width:100%;padding: 10px;">
+                  <tr>
+                      <th style="background-color:#002bff; width:30% ; border-radius: 25px;color: aliceblue;"><p>Choose developers</p></th>
+                      <th style="background-color:#002bff; width:30% ; border-radius: 25px;color: aliceblue;"><p>Pay safely</p></th>
+                    </tr>
+                  <tr>
+                      <th style="background-color:powderblue; width:50% ; border-radius: 25px"><p>Choose freelancers
+                          Whatever your needs, there will be a freelancer to get it done: from web design, mobile app development, 
+                          virtual assistants, product manufacturing, and graphic design (and a whole lot more).</p></th>
+                      <th style="background-color:powderblue; width:50% ; border-radius: 25px"><p>With secure payments and thousands of reviewed professionals to choose from, Freelancer.com is the simplest and safest way to get work done online.</p></th>
+                    </tr>
+                  </table>
+          </center>
+     
+</body>
+</html>
