@@ -10,6 +10,11 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  height: 50px;
+}
+img{
+  width: 100px;
+  height: 100px;
 }
 
 /* Style the links inside the navigation bar */
@@ -40,17 +45,77 @@
   background-repeat:no-repeat;
    background-size:cover;
 }
+
+ 
+div {
+  margin: 20px;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
 </style>
   </header>
 <body id=home_body>
-  <dev>
-      <div class="topnav">
+      <div class="topnav" style="margin: 0px;">
           <a href="index.html">Home</a>
           <a class="active"  href="#news">Our Developers</a>
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
         </div>
-
+      <center>
+        <div style="margin-top: 100px;">
+          <ul>
+            <li>
+              <img src="us1.webp" />
+              <h3>ashish jksol</h3>
+              <p>I have 5+ year experience in mobile development. You’re looking for the good experience android & ios developer, let’s talk about a perfect match!.</p>
+            </li>
+              
+            <li>
+              <img src="user.jpg"  />
+              <h3>Headline</h3>
+              <p>Lorem ipsum dolor sit amet...</p>
+            </li>
+         
+            <li>
+              <img src="user.jpg"  />
+              <h3>Headline</h3>
+              <p>Lorem ipsum dolor sit amet...</p>
+            </li>
+         
+            <li>
+              <img src="user.jpg"  />
+              <h3>Headline</h3>
+              <p>Lorem ipsum dolor sit amet...</p>
+            </li>
+          </ul>
+        </div>
+      </center>
      
 </body>
 </html>
